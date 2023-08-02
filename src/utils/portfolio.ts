@@ -28,26 +28,26 @@ export const socialLinks: StringKeyValueType = {
 };
 
 export const author = {
-  name: 'Vatsal Singh',
-  email: 'vatsalsinghkv@gmail.com',
+  name: 'Victor Queiroiga',
+  email: 'contato@victorqueiroga.com',
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Front-End Developer',
+  title: 'Victor Queiroga | Full-Stack Developer',
   description:
-    'Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Victor Queiroga is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
   url: 'https://vatsalsinghkv.vercel.app/',
   keywords: [
-    'Vatsal',
-    'Vatsal Singh',
-    '@vatsalsinghkv',
-    'vatsalsinghkv',
+    'Victor',
+    'Victor Queiroga',
+    '@queirogavictor',
+    'victorqueiroga',
     'Portfolio',
-    'Vatsal Portfolio ',
-    'Vatsal Singh Portfolio',
+    'Victor Portfolio ',
+    'Vatsal Queiroga Portfolio',
   ],
 };
 
@@ -77,13 +77,13 @@ export const navbarSection: NavbarSectionType = {
 
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
-  title: 'vatsal singh.',
-  tagline: 'I create visually pleasing interfaces for the web.',
+  title: 'victor queiroga.',
+  tagline: 'I create web systems.',
   description:
-    "I'm a passionate Front-End web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
+    "I'm a passionate FullStack developer having an experience of web applications with Java Spring and AWS.",
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
-  specialText: 'Currently available for remote job & freelance',
+  specialText: 'Currently working for DER/PB',
   // either button or simple text (information)
   cta: {
     title: 'see my resume',
@@ -101,15 +101,15 @@ export const aboutSection: AboutSectionType = {
   list: {
     title: 'Here are a few technologies I’ve been working with recently:',
     items: [
-      'NextJs',
-      'TailwindCSS',
-      'ExpressJs',
-      'Solidity',
-      'TypeScript',
-      'CSS Animations',
+      'AWS',
+      'Java',
+      'Spring',
+      'React',
+      'Javascript',
+      'Relational DB',
     ],
   },
-  img: '/vatsal-singh.jpg',
+  img: '/victor-queiroga.jpeg',
 };
 
 // * Skills Section

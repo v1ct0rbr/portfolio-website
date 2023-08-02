@@ -19,7 +19,7 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Vatsal Singh, an artist as well as crazy full stack
+            Hi, my name is Victor Queiroga, an artist as well as crazy full stack
             web developer who wants to explore every tech stack.
           </p>
           <p>
