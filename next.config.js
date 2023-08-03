@@ -5,6 +5,7 @@ module.exports = {
     domains: [
       'user-images.githubusercontent.com',
       'github-production-user-asset-6210df.s3.amazonaws.com',
+      'firebasestorage.googleapis.com'
     ],
   },
   experimental: {
