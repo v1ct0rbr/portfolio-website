@@ -126,29 +126,28 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive static websites using Next.js',
-        'Building responsive Single Page Apps in React.js',
-        'Building RESTful APIs in Express',
+        'Building responsive WEB Systems using Java / Spring',
+        'Implementing and optimizing cloud solutions.',
+        'Building RESTful APIs in Java / Spring',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
         { name: 'html-5', icon: 'vscode-icons:file-type-html' },
         { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
-        { name: 'sass', icon: 'vscode-icons:file-type-sass' },
         { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
         {
           name: 'typeScript',
           icon: 'vscode-icons:file-type-typescript-official',
         },
-        { name: 'python', icon: 'vscode-icons:file-type-python' },
-        { name: 'nodejs', icon: 'logos:nodejs-icon' },
+        { name: 'java', icon: 'vscode-icons:file-type-java' },
+        { name: 'spring', icon: 'logos:spring-icon' },
         { name: 'reactjs', icon: 'logos:react' },
         { name: 'nextjs', icon: 'logos:nextjs-icon' },
         // { name: 'angularjs', icon: 'logos:angular-icon' },
-        { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
         { name: 'redux', icon: 'logos:redux' },
+        { name: 'chartjs', icon: 'file-icons:chartjs' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
-        { name: 'jest', icon: 'vscode-icons:file-type-jest' },
+        { name: 'aws', icon: 'skill-icons:aws-light' },
       ],
     },
     {
@@ -160,13 +159,13 @@ export const skillsSection: SkillsSectionType = {
       },
       points: [
         'Experience in designing user-friendly interfaces with figma',
-        'Experience in developing design systems and style guides',
+        'Experience in designing user-friendly interfaces with Bootstrap',
         'Providing user-friendly design solutions',
       ],
       softwareSkills: [
         { name: 'figma', icon: 'logos:figma' },
-        { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
-        { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
+        { name: 'Bootstrap', icon: 'logos:bootstrap' },
+        { name: 'responsive', icon: 'mdi:responsive' },
       ],
     },
     /* {
@@ -196,42 +195,32 @@ export const skillsSection: SkillsSectionType = {
 export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
+
     {
-      company: 'SHMTH Capital',
-      companyUrl: 'https://www.linkedin.com/company/shmth-capital/about/',
-      role: 'frontend developer intern',
-      started: 'april 2023',
-      upto: 'july 2023',
+      company: 'DERPB',
+      companyUrl: 'https://der.pb.gov.br',
+      role: 'System Analist',
+      started: 'january 2017',
+      upto: 'present',
       tasks: [
-        'Built trading platform using TradingView library.',
-        'Designed SHMTH Capital website with Next.js, TypeScript & TailwindCSS.',
-        'Collaborated with diverse nationwide team of developers.',
+        'build responsive web systems.',
+        'Implementing and optimizing cloud solutions.',
+        'Administer and configure the local network.',
       ],
     },
     {
-      company: 'webnetics',
-      companyUrl: 'https://webnetic.vercel.app/',
-      role: 'frontend developer',
-      started: 'june 2022',
-      upto: 'january 2023',
+      company: 'DERPB',
+      companyUrl: 'https://der.pb.gov.br',
+      role: 'Web developer / trainee',
+      started: 'january 2015',
+      upto: 'january 2017',
       tasks: [
-        'Built static frontend UI from the ground up using Next.js and Figma handover designs.',
-        'Architected the folder structure and initial setup of the app.',
-        'Reviewed and approved multiple Pull requests.',
-        'Worked remotely with a distributed team from around the globe, collaborating closely using screen-sharing.',
+        'build java applications.',
+        'Perform internal software maintenance.',
+        'Administer and configure the local network.',
       ],
-    },
-    {
-      company: 'Kronos',
-      companyUrl: 'https://kronos-sscbs-21.github.io/proj-kronos-site/',
-      role: 'designer & developer',
-      started: 'january 2021',
-      upto: 'june 2021',
-      tasks: [
-        'Designed social media posts.',
-        'Worked remotely with designing & tech team.',
-      ],
-    },
+    }
+
   ],
 };
 

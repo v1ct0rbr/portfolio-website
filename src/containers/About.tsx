@@ -26,11 +26,11 @@ const About = () => {
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
             <Link
-              href="https://webnetic.vercel.app/"
+              href="https://der.pb.gov.br/"
               target="_blank"
               className="text-accent"
             >
-              Webnetics
+              DERPB
             </Link>
             .
           </p>
