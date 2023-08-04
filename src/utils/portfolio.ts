@@ -236,13 +236,13 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/v1ct0rbr/arduinoprojects',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fbomba_dagua01.png?alt=media&token=83092f63-0d10-4cc5-9a38-997b47e38fd7',
       year: 2016,
-      tags: ['PHP', 'Socket', 'Bootstrap'],
+      tags: ['PHP', 'Bootstrap', 'Arduino'],
     },
     {
       id: getId(),
       name: 'VQ Licence Manager',
-      url: 'https://fylo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/fylo',
+      url: '',
+      repo: '',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fvqlicencemanager01.png?alt=media&token=e8cbf31d-6aa0-4a45-8c67-c43c9801b92d',
       year: 2022,
       tags: ['Spring', 'Boostrap'],
@@ -250,17 +250,26 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'DEROS - Service Control',
-      url: 'https://remotive-jobs.vercel.app/',
-      repo: 'https://github.com/vatsalsinghkv/remotive-jobs',
+      url: '',
+      repo: '',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fderos.png?alt=media&token=26d34074-8252-4f51-9429-08945402e057',
       year: 2017,
       tags: ['Java', 'Spring', 'Bootstrap'],
     },
     {
       id: getId(),
+      name: 'Trainee Control',
+      url: '',
+      repo: '',
+      img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Festagiarioscontrole.png?alt=media&token=098e2e9f-41f3-4551-a9d5-0e2889462976',
+      year: 2017,
+      tags: ['Java', 'Spring', 'Bootstrap'],
+    },
+    {
+      id: getId(),
       name: 'PontoSim - Sistema de ponto',
-      url: 'https://countries-app-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/rest-countries-api',
+      url: '',
+      repo: '',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fpontosim02.png?alt=media&token=a6b78704-1b4d-4d9c-8e3f-f04326017b95',
       year: 2023,
       tags: ['Java', 'Spring', 'Boostrap'],
@@ -268,8 +277,8 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'dt money - financeiro',
-      url: 'https://rock-paper-scissors-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/rock-paper-scissors',
+      url: '',
+      repo: 'https://github.com/v1ct0rbr/ignite-reactjs-dtmoney',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fdtmoney01.png?alt=media&token=39735754-b91b-4188-84a1-f667def21ec0',
       year: 2022,
       tags: ['React', 'Sass'],
@@ -277,32 +286,32 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Multi Timer',
-      url: 'https://todo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/todo-app',
+      url: 'https://multitimer.vercel.app/',
+      repo: 'https://github.com/v1ct0rbr/multitimer',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fmultitimer01.png?alt=media&token=634782a6-8749-4853-b894-05966c76a5be',
       year: 2021,
-      tags: ['React', 'Sass', 'JS'],
+      tags: ['React', 'Next'],
     },
     {
       id: getId(),
       name: 'ToDo App',
-      url: 'https://todo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/todo-app',
+      url: '',
+      repo: 'https://https://github.com/v1ct0rbr/todo-reactnative',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Ftodo01.png?alt=media&token=2339a5a1-6611-47e6-b213-f73a8e3e7660',
       year: 2021,
-      tags: ['React', 'Sass', 'JS'],
+      tags: ['React Native', 'Expo'],
     },
-    
+
     {
       id: getId(),
       name: 'Music Player',
-      url: 'https://blogr-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/blogr-landing-page',
+      url: '',
+      repo: 'https://github.com/v1ct0rbr/projeto_appmusicplayer_react-native',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fappmusicplayer_01.png?alt=media&token=b002e761-7792-4c75-b438-4da9ba2026f2',
       year: 2021,
       tags: ['React Native', 'Expo'],
     },
-   
+
     // {
     //   name: 'nexter',
     //   url: 'https://vatsalsinghkv.github.io/nexter/',
@@ -311,19 +320,19 @@ export const projectsSection: ProjectsSectionType = {
     //   year: 2021,
     //   tags: ['html', 'sass'],
     // },
-    
+
     {
       id: getId(),
       name: 'calculator app',
-      url: 'https://vatsalsinghkv.github.io/calculator-app/',
-      repo: 'https://github.com/vatsalsinghkv/calculator-app/',
+      url: '',
+      repo: 'https://github.com/v1ct0rbr/projeto-calculadora',
       img: 'https://firebasestorage.googleapis.com/v0/b/my-images-debc9.appspot.com/o/projetos%2Fimagens-projetos%2Fcalculadora01.png?alt=media&token=38c94719-740b-417d-8bd2-679b08ab4e8d',
       year: 2021,
       tags: ['html', 'CSS', 'JS'],
     },
-    
-    
-    
+
+
+
   ],
 };
 
@@ -336,7 +345,7 @@ export const contactSection: ContactSectionType = {
     'I’m currently looking for new opportunities.',
     'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
   ],
-  link: `mailto:${author.email}`,
+  link: `https://tawk.to/vqsolucoesti`,
 };
 
 // Social Links Section
@@ -351,10 +360,12 @@ export const socialSection: SocialSectionType = {
       icon: 'mdi:instagram',
       url: socialLinks.instagram,
     },
+    /*
     {
       icon: 'lucide:twitter',
       url: socialLinks.twitter,
     },
+    */
     {
       icon: 'lucide:linkedin',
       url: socialLinks.linkedin,
@@ -369,6 +380,6 @@ export const socialSection: SocialSectionType = {
 // Footer Section
 
 export const footerSection: FooterSectionType = {
-  title: 'Design & Built by Vatsal Singh',
-  link: 'https://github.com/vatsalsinghkv/portfolio-website',
+  title: 'By Victor Queiroga',
+  link: 'https://linkedin.com/in/victor-queiroga',
 };

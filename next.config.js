@@ -9,6 +9,6 @@ module.exports = {
     ],
   },
   experimental: {
-    appDir: false,
+    appDir: true,
   },
 };

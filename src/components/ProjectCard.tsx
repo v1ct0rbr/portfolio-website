@@ -24,11 +24,13 @@ const ProjectCard = ({
   return domLoaded ? (
     <motion.div {...rest} className="w-full max-w-[350px]">
       <button
-        onClick={(e) => {
-          // Don't run this if the clicked target is an anchor element
-          if ((e.target as HTMLElement).closest('a')) return;
-          window.open(url);
-        }}
+        /*
+          onClick={(e) => {
+            // Don't run this if the clicked target is an anchor element
+            if ((e.target as HTMLElement).closest('a')) return;
+            window.open(url);
+          }}
+          */
         className="block w-full overflow-hidden transition-all duration-200 rounded-md shadow-xl group bg-bg-secondary dark:shadow-2xl"
       >
         <div className="overflow-hidden h-[200px]">
@@ -46,20 +48,32 @@ const ProjectCard = ({
           <div className="flex items-center justify-between">
             <p className="font-mono text-xs capitalize">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">
-              <a
-                href={repo}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
-                <Icon icon="tabler:brand-github" width={20} height={20} />
-              </a>
-              <a
-                href={url}
-                className="block duration-200 hover:text-accent"
-                target="_blank"
-              >
-                <Icon icon="ci:external-link" width={22} height={22} />
-              </a>
+              {repo !== '' ?
+                (<a
+                  href={repo}
+                  className="block duration-200 hover:text-accent"
+                  target="_blank"
+                >
+                  <Icon icon="tabler:brand-github" width={20} height={20} />
+                </a>)
+                :
+                (<span></span>)
+              }
+              {url !== '' ?
+                (<a
+                  href={url}
+                  className="block duration-200 hover:text-accent"
+                  target="_blank"
+                >
+                  <Icon icon="ci:external-link" width={22} height={22} />
+                </a>)
+                :
+                (<span></span>)
+
+              }
+
+
+
             </div>
           </div>
           <h4 className="flex justify-between font-medium capitalize duration-200 group-hover:text-accent">

@@ -24,13 +24,13 @@ const About = () => {
           </p>
           <p>
             Fast-forward to today, and I’ve had the privilege of working at a
-            start-up -{' '}
+            government company -{' '}
             <Link
               href="https://der.pb.gov.br/"
               target="_blank"
               className="text-accent"
             >
-              DERPB
+              Departamento de Estradas de Rodagens da Paraíba
             </Link>
             .
           </p>
