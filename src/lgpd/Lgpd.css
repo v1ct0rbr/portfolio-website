@@ -1,0 +1,9 @@
+.lgpd {
+	position: fixed;
+	height: 88px;
+	bottom: 50px;
+	width: 100%;
+	opacity: 0.9;
+	z-index: 1000;
+}
+

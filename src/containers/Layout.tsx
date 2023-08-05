@@ -2,6 +2,7 @@ import Email from './Email';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Social from './Social';
+import Lgpd from '../lgpd/Lgpd'
 import React from 'react';
 
 type Props = {
@@ -13,6 +14,7 @@ const Layout = ({ children, className = '' }: Props) => {
   return (
     <>
       <Navbar />
+      <Lgpd />
       <main
         className={`mx-auto px-6 sm:px-8 md:px-28 lg:px-20 xl:px-0 max-w-screen-lg ${className}`}
       >
@@ -21,6 +23,7 @@ const Layout = ({ children, className = '' }: Props) => {
       <Footer />
       <Social />
       <Email />
+     
     </>
   );
 };

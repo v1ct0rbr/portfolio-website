@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+const {nextui} = require("@nextui-org/react");
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
+
   darkMode: 'class',
   theme: {
     extend: {
@@ -31,5 +34,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
