@@ -19,8 +19,10 @@ export default function App(props: UseDisclosureProps) {
 
             <dialog id="modal_policy" className="modal">
                 <form method="dialog" className="modal-box w-11/12 max-w-5xl">
+
                     <h3 className="font-bold text-lg">Cookie Policy</h3>
-                    <div className="py-4">
+
+                    <div className="py-4 overflow-y-auto h-96">
                         <HTMLString html={policy} />
                     </div>
                     <div className="modal-action">

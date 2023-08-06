@@ -1,7 +1,5 @@
-import React, { Component, useEffect, useRef, useState } from 'react';
-import './Lgpd.css';
+import React, { useEffect, useState } from 'react';
 import Modal from './ModalPolicy';
-import policy from './policy';
 import { last_cookie_policy } from './contants';
 import { format } from 'date-fns';
 
@@ -59,7 +57,7 @@ const Lgpd = () => {
         <Modal isOpen={modalIsOpen} />
 
         {verificarCookiesNaoAceitos() ? (
-            <div className="alert lgpd">
+            <div className="alert fixed bottom-10 left-0 z-40 opacity-75">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 <span>Utilizamos cookies e outras tecnologias pra melhorar a sua experiência no nosso site.</span>
                 <div>
