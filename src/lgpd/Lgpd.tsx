@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component, useEffect, useRef, useState } from 'react';
 import './Lgpd.css';
 import Modal from './ModalPolicy';
 import policy from './policy';
@@ -14,7 +14,8 @@ const Lgpd = () => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [cookiesAccepted, setCookiesAccepted] = useState(true);
-    const [agreementDate, setAgreementDate] = useState(new Date())
+    const [agreementDate, setAgreementDate] = useState(new Date());
+   
 
     useEffect(() => {
         // Perform localStorage action
@@ -62,7 +63,10 @@ const Lgpd = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 <span>Utilizamos cookies e outras tecnologias pra melhorar a sua experiência no nosso site.</span>
                 <div>
-                    <button className="btn btn-sm" onClick={() => window.modal_policy.showModal()}>Regulamento</button>
+                    <button className="btn btn-sm" onClick={() => { 
+                        if (document) {
+                            (document.getElementById('modal_policy') as HTMLFormElement).showModal();
+                        }}}>Regulamento</button>
                     <button className="btn btn-sm btn-primary" onClick={() => aceitar()}>Accept</button>
                 </div>
             </div>
