@@ -1,7 +1,10 @@
 import React, { Component, useEffect, useState } from 'react';
 import './Lgpd.css';
-import Modal from '../components/Modal';
-import { Button, ButtonGroup, Card, CardBody } from '@nextui-org/react';
+import Modal from './ModalPolicy';
+import policy from './policy';
+import { last_cookie_policy } from './contants';
+import { format } from 'date-fns';
+
 
 
 
@@ -11,18 +14,28 @@ const Lgpd = () => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [cookiesAccepted, setCookiesAccepted] = useState(true);
+    const [agreementDate, setAgreementDate] = useState(new Date())
 
     useEffect(() => {
         // Perform localStorage action
+        // Perform localStorage action
         const lgpd = localStorage.getItem('cookies');
+        const date = localStorage.getItem('agreementDate');
         setCookiesAccepted(lgpd !== null && lgpd == 'accepted');
+        setAgreementDate(date !== null ? new Date(date) : new Date(0));
 
     }, [])
+
+    useEffect(() => {
+        localStorage.setItem("agreementDate", format(agreementDate, 'yyyy-MM-dd') );
+    },[agreementDate])
 
 
     const aceitar = () => {
         setCookiesAccepted(true);
+        setAgreementDate(new Date(last_cookie_policy));
         localStorage.setItem("cookies", "accepted");
+        // localStorage.setItem("agreementDate", last_cookie_policy);
         console.log("cookies aceitos")
         // window.location.reload();
     }
@@ -33,80 +46,32 @@ const Lgpd = () => {
         setModalIsOpen(false);
     }
 
+    const verificarCookiesNaoAceitos = () => {
+        let date1 = new Date(agreementDate);
+        let date2 = new Date(last_cookie_policy)
+
+        return !cookiesAccepted || date1 < date2
+    }
+
 
     return (<>
-        <Modal isOpen={modalIsOpen} onClose={closeModal} />
-        {/* <div className="lgpd">
-            <div className="lgpd-text" >
+        <Modal isOpen={modalIsOpen} />
+
+        {verificarCookiesNaoAceitos() ? (
+            <div className="alert lgpd">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 <span>Utilizamos cookies e outras tecnologias pra melhorar a sua experiência no nosso site.</span>
-            </div>
-
-            <button className="lgpd-regulamento" onClick={() => regulamento()}>
-                <span>Ler regulamento</span>
-            </button>
-            <button className="lgpd-aceitar" onClick={() => aceitar()} >
-                <span>Aceitar</span>
-            </button>
-        </div> */}
-        {!cookiesAccepted ? (<Card className='lgpd mx-auto' radius='none'>
-            <CardBody>
-                <div className="flex items-center justify-between">
-                    <p>Utilizamos cookies e outras tecnologias pra melhorar a sua experiência no nosso site.</p>
-
-                    <ButtonGroup>
-                        <Button color="default" onClick={() => regulamento()}>
-                            Regulamento
-                        </Button>
-
-                        <Button color="success" onClick={() => aceitar()} >
-                            <span>Aceitar</span>
-                        </Button>
-                    </ButtonGroup>
+                <div>
+                    <button className="btn btn-sm" onClick={() => window.modal_policy.showModal()}>Regulamento</button>
+                    <button className="btn btn-sm btn-primary" onClick={() => aceitar()}>Accept</button>
                 </div>
-
-            </CardBody>
-        </Card>) : (<></>)}
-
-
+            </div>
+        ) : (<></>)}
     </>
     );
 };
 
 
-
-
-
-/*
-    render() {
-
-        if (typeof window !== 'undefined') {
-            const lgpd = localStorage.getItem("cookies");
-            console.log('Aceitou Lgpd:' + lgpd);
-
-            if (lgpd !== null) {
-                return (
-                    <React.Fragment>
-                    </React.Fragment>
-                );
-            }else
-            return (
-                <div>
-                    {this.state.exibirLgpd}
-                </div>
-            );
-        } else {
-            return (
-                <React.Fragment>
-               </React.Fragment>
-            );
-        }
-
-
-        //localStorage.removeItem("cookies");
-        //window.location.reload();
-
-    }
-    */
 
 
 export default Lgpd;
