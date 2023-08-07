@@ -29,7 +29,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/cookies/lgpd-core.jsx"  ],
   "exclude": [
     "node_modules"
   ]
