@@ -14,7 +14,7 @@ COPY package.json yarn.lock ./
 RUN yarn install
 
 # Copy the rest of the application code to the container
-COPY . .
+COPY . /app
 
 # Build the Next.js application
 RUN yarn build

@@ -5,5 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - ./:/app  # Mapeamento do diretório do projeto no host para o diretório de trabalho no contêiner
     ports:
       - "3000:3000"

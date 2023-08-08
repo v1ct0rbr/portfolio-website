@@ -44,7 +44,7 @@ const policy = `
             <p>Se tiver alguma dúvida ou preocupação em relação ao uso de cookies em nosso site de portfólio, entre em contato
                 conosco através dos meios de contato fornecidos no site.</p>
 
-            <p>Data da última atualização: ${format(new Date(last_cookie_policy), 'dd/MM/yyyy')}</p>
+            <p>Data da última atualização: ${last_cookie_policy}</p>
             </div>
         `
 

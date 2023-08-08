@@ -126,7 +126,7 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive WEB Systems using Java / Spring',
+        'Building responsive WEB Systems using Java / Spring2',
         'Implementing and optimizing cloud solutions.',
         'Building RESTful APIs in Java / Spring',
       ],

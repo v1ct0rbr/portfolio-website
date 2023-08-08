@@ -25,17 +25,12 @@ const Lgpd = () => {
 
     }, [])
 
-    /*
-    useEffect(() => {
-        localStorage.setItem("agreementDate", format(agreementDate, 'yyyy-MM-dd') );
-    },[agreementDate])
-*/
 
     const aceitar = () => {
         setCookiesAccepted(true);
         setAgreementDate(new Date(last_cookie_policy));
         localStorage.setItem("cookies", "accepted");
-        // localStorage.setItem("agreementDate", last_cookie_policy);
+        localStorage.setItem("agreementDate", last_cookie_policy);
         console.log("cookies aceitos")
         // window.location.reload();
     }
